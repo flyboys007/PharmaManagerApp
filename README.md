@@ -1,7 +1,11 @@
 # BatchBook (prototype PWA)
 
-Production manager app for an API plant: batches, 6-month reactor schedule, plant layout and blocks,
-shifts and attendance, work permits and solvent transfers. Three themes. Excel/CSV import.
+Production manager app for an API plant: batches with a stage-by-stage pipeline, reactors by block, shifts and attendance,
+month calendar and 6-month reactor timeline, work permits and solvent transfers. Three themes. Excel/CSV import.
+
+Bottom bar: Home, Batches, Reactors, Shifts, Calendar.
+Setup (slider icon on Home): one menu to add and edit Products, Reactors, Stages and Blocks.
+Each product picks its stages; every batch shows that product's pipeline and moves stage by stage.
 
 All data lives **on the phone** (IndexedDB). Backup to **Google Drive** copies only what changed.
 Sample data (made-up names and batches) loads on first open. Settings > "Reset to sample data" reloads it.
